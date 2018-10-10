@@ -1,0 +1,33 @@
+Source: vztt
+Section: libs
+Priority: optional
+Maintainer: s3rj1k <evasive.gyron@gmail.com>
+Build-Depends: debhelper (>= 9)
+Standards-Version: 3.9.6
+
+Package: libvztt-dev
+Section: libdevel
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: EZ template management tools development files.
+ OpenVZ EZ template management tools, component of OpenVZ
+ .
+ This package contains development file for OpenVZ EZ templates.
+
+Package: libvztt1
+Architecture: amd64
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: EZ template management tools development files.
+ OpenVZ EZ template management tools, component of OpenVZ
+ .
+ This package contains library for OpenVZ EZ templates.
+
+Package: vztt
+Architecture: amd64
+Multi-Arch: same
+Depends: ${shlibs:Depends}, ${misc:Depends}, ${misc:Depends}, ${python:Depends}
+Pre-Depends: ${misc:Pre-Depends}
+Description: EZ template management tools.
+ OpenVZ EZ template management tools, component of OpenVZ
+ .
+ This package contains OpenVZ EZ templates tools.

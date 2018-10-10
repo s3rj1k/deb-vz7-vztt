@@ -1,0 +1,14 @@
+# ignore changelog bug, not debian upstream package
+vztt: new-package-should-close-itp-bug
+# ignore libexec files
+vztt: non-standard-dir-in-usr usr/libexec/
+vztt: arch-dependent-file-not-in-arch-specific-directory usr/libexec/run_from_chroot
+vztt: arch-dependent-file-not-in-arch-specific-directory usr/libexec/vztt_pfcache_xattr
+vztt: file-in-unusual-dir usr/libexec/ovz-template-converter
+vztt: file-in-unusual-dir usr/libexec/run_from_chroot
+vztt: file-in-unusual-dir usr/libexec/vztt_pfcache_xattr
+# ignore VZ specific folders
+vztt: non-standard-toplevel-dir vz/
+vztt: file-in-unusual-dir vz/template/conf/vztt/url.map
+# ignoring this, not moving to arch dependent folder
+vztt: arch-dependent-file-not-in-arch-specific-directory usr/sbin/vzpkg

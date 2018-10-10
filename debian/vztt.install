@@ -1,0 +1,5 @@
+etc/*
+vz/*
+usr/sbin/*
+usr/share/*
+usr/libexec/*

@@ -1,0 +1,6 @@
+# ignore changelog bug, not debian upstream package
+libvztt1: new-package-should-close-itp-bug
+# ignore static binary, custom init
+libvztt1: statically-linked-binary usr/lib/vztt/myinit
+# ignore library symlink
+libvztt1: non-dev-pkg-with-shlib-symlink usr/lib/libvztt.so.1.0.3 usr/lib/libvztt.so
